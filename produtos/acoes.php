@@ -15,6 +15,16 @@ switch ($_POST['acao']) {
 
         move_uploaded_file($_FILES["foto"]["tmp_name"], "fotos/$novoNome");
 
+
+        $descricao = $_POST["descricao"];
+        $peso = $_POST["peso"];
+        $quantidade = $_POST["quantidade"];
+        $cor = $_POST["cor"];
+        $tamanho = $_POST["tamanho"];
+        $valor = $_POST["valor"];
+
+
+
         break;
     
     default:
