@@ -27,57 +27,24 @@
 
 .card-categorias {
   margin: 0px 30px;
-  padding: 30px;
+  padding: 15px;
   width: calc(100% - 60px);
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-
-  flex-grow: 1;
-  background-color: var(--backgroundSecondary);
-  border-radius: 6px;
-}
-.card-text {
-
-  width: calc(100% - 60px);
-
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-
-  flex-grow: 1;
-  background-color: var(--backgroundSecondary);
-  border-radius: 6px;
-}
-
-.card-categorias2 {
-  
-  width: calc(100% - 60px);
-
-  display: flex;
-  flex-direction: row;
- justify-content: end;
- align-items: center;
 
   background-color: var(--backgroundSecondary);
   border-radius: 6px;
 }
 
-.card-categorias2 > img {
+.card-categorias > img {
   width: 20px;
 
   cursor: pointer;
   transition: 0.2s;
 }
 
-.card-categorias2 > img:hover {
+.card-categorias > img:hover {
   transform: scale(1.1);
-}
-
-h2 {
-  color: rgb(255, 0, 0);
-  font-size: 1rem;
 }

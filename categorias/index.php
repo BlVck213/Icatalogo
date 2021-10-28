@@ -47,7 +47,7 @@
                                 
                     ?>
 
-                        <h2><?php echo $erro?></h2>
+                        <li><?php echo $erro?></li>
 
                     <?php
                         }//fim do foreach
@@ -76,18 +76,15 @@
                         while($categoria = mysqli_fetch_array($resultado)){
 
                     ?>
-                <div class="card-categorias">
-                    <div class="card-text">
-                        <?php echo $categoria['descricao']?>
+
+                    <div class="card-categorias">
+                        <?php echo $categoria["descricao"]; ?>
+                        <img onclick="deletar(<?php echo $categoria['id']; ?>)" src="https://icons.veryicon.com/png/o/construction-tools/coca-design/delete-189.png" />
+                        <img onclick="javascript: window.location = 'editar.php?id=<?php echo $categoria['id']; ?>'" src="https://icons.veryicon.com/png/o/leisure/weight-with-linear-icon/edit-65.png" />
                     </div>
-                        <div class="card-categorias2">
-                            <img onclick="deletar(<?php echo $categoria['id']; ?>)" src="https://icons.veryicon.com/png/o/construction-tools/coca-design/delete-189.png" />
-                            <img onclick="javascript: window.location = 'editar.php?id=<?php echo $categoria['id'];?>'" src="https://icons.veryicon.com/png/o/education-technology/plush-three-year-old-icon-gallery/edit-50.png" /> 
-                        </div> 
-                </div>
-                <?php
-                    }
-                ?>
+
+                    <?php } ?>
+
                 <form id="form-deletar" method="POST" action="./acoes.php">
                     <input type="hidden" name="acao" value="deletar" />
                     <input type="hidden" id="categoriaId" name="categoriaId" value="" />
