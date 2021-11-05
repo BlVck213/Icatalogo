@@ -131,7 +131,7 @@
             <label for="categoria">Foto</label>
             <input type="file" name="foto" id="foto" accept="image/*" />
           </div>
-
+          
           <button onclick="javascript:window.location.href = '../'">Cancelar</button>
           <button>Salvar</button>
 
